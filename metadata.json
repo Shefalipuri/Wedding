@@ -1,0 +1,8 @@
+{
+  "name": "Remix Royal Wedding Invitation",
+  "description": "An interactive wedding invitation featuring a 3D animated envelope opening, background music, ceremony timeline, RSVP, guest wishes, and a backend file storage system for music and photos.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

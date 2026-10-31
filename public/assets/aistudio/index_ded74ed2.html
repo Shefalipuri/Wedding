@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wedding Invitation | Anuja & Hrishikesh</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Great+Vibes&family=Marcellus&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="font-body bg-cream text-gray-800 antialiased overflow-x-hidden selection:bg-gold selection:text-crimson">
+
+    <!-- Canvas for falling flower petals -->
+    <canvas id="petal-canvas"></canvas>
+
+    <!-- Audio Player Toggle & Admin Quick Floating Buttons -->
+    <div class="fixed top-5 right-5 z-40 flex items-center gap-2">
+        <button id="adminQuickBtn" onclick="openAdminModal()" class="w-10 h-10 rounded-full bg-gold text-crimson-dark border-2 border-crimson shadow-xl flex items-center justify-center hover:scale-110 transition duration-300 focus:outline-none" title="Admin Control Panel">
+            <i class="fas fa-cog text-sm"></i>
+        </button>
+        <button id="audioToggleBtn" onclick="toggleAudio()" class="w-12 h-12 rounded-full bg-crimson text-gold border-2 border-gold shadow-2xl flex items-center justify-center hover:scale-110 transition duration-300 focus:outline-none" title="Toggle Music">
+            <i id="audioIcon" class="fas fa-music text-lg animate-pulse"></i>
+        </button>
+    </div>
+
+    <!-- Hidden Background Audio Player Element -->
+    <audio id="weddingBgAudio" loop preload="auto">
+        <!-- Relative path fallback for local upload or hosted MP3 -->
+        <source id="audioSource" src="wedding_music.mp3" type="audio/mpeg">
+        <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=indian-instrumental-flute-112702.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <!-- ================= 1. COVER / ENVELOPE OPENING MODAL ================= -->
+    <div id="envelopeModal" class="fixed inset-0 z-50 flex items-center justify-center dark-mandala p-4 transition-opacity duration-700">
+        <div class="max-w-md w-full text-center relative bg-crimson border-4 border-gold p-8 rounded-2xl shadow-2xl overflow-hidden text-cream floating">
+            
+            <!-- Traditional Corner Ornaments -->
+            <div class="absolute top-2 left-2 text-gold text-2xl"><i class="fas fa-crown"></i></div>
+            <div class="absolute top-2 right-2 text-gold text-2xl"><i class="fas fa-crown"></i></div>
+            <div class="absolute bottom-2 left-2 text-gold text-2xl"><i class="fas fa-crown"></i></div>
+            <div class="absolute bottom-2 right-2 text-gold text-2xl"><i class="fas fa-crown"></i></div>
+
+            <!-- Ganesh Motif -->
+            <div class="my-3 inline-block p-4 rounded-full border-2 border-gold bg-crimson-dark shadow-inner">
+                <span class="font-heading text-4xl gold-foil">ॐ</span>
+            </div>
+
+            <p class="font-subheading text-gold tracking-widest uppercase text-xs mb-2">Shree Ganeshaya Namah</p>
+            <h2 class="font-script text-4xl sm:text-5xl text-gold mb-2">Wedding Invitation</h2>
+            <p class="font-subheading text-cream/90 text-sm mb-6">We request the honor of your presence at the wedding celebrations of</p>
+
+            <div class="py-4 my-4 border-y border-gold/30">
+                <h1 class="font-heading text-2xl sm:text-3xl gold-foil mb-1">ANUJA & HRISHIKESH</h1>
+                <p class="text-xs text-gold tracking-widest uppercase">November 21st, 2026 • Lotus Inn, Rahatgaon</p>
+            </div>
+
+            <button onclick="openInvitation()" class="shimmer-btn text-crimson-dark font-subheading font-bold px-8 py-3 rounded-full shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1 active:translate-y-0 w-full sm:w-auto uppercase tracking-wider text-sm mt-4 cursor-pointer relative z-10">
+                <i class="fas fa-envelope-open mr-2"></i> Open Invitation
+            </button>
+        </div>
+    </div>
+
+    <!-- ================= MAIN WEBSITE CONTENT (PAGE 2) ================= -->
+    <div id="mainContent" class="opacity-0 hidden transition-opacity duration-1000">
+
+        <!-- HEADER HERO SECTION -->
+<!-- ... existing code -->

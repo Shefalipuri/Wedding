@@ -1,0 +1,85 @@
+{
+  "adminPin": "1234",
+  "groomName": "Hrishikesh",
+  "brideName": "Anuja",
+  "weddingDate": "2026-11-21T19:30:00",
+  "venueName": "Lotus Inn Banquet Hall & Lawns",
+  "venueAddress": "Lotus Inn, Ring Rd, near Govind Prabhu Temple, Rahatgaon, Amravati, Maharashtra 444603",
+  "googleMapsUrl": "https://maps.google.com/?q=Lotus+Inn+Rahatgaon+Amravati+Maharashtra",
+  "tagline": "Together with their families, invite you to celebrate the joyous union of",
+  "shloka": "मंगलम् भगवान विष्णुः मंगलम् गरुड़ध्वजः। मंगलम् पुण्डरीकाक्षः मङ्गलाय तनो हरिः॥",
+  "activeMusicUrl": "/uploads/music/music_1793446606579_Tera_Ban_Jaunga_Instrumental_Cover.wav",
+  "activeMusicTitle": "Tera Ban Jaunga (Instrumental Cover)",
+  "photos": {
+    "hero": "/uploads/photos/photo_1793452726220_1000318278.jpg",
+    "bride": "/uploads/photos/photo_1793440002000_bride_portrait.jpg",
+    "groom": "/uploads/photos/photo_1793440003000_groom_portrait.jpg",
+    "haldi": "/uploads/photos/photo_1793453124491_haldi_image.jpeg",
+    "sangeet": "/uploads/photos/photo_1793453039777_dance.png",
+    "binayak": "/uploads/photos/photo_1793453003408_ghee.jpg",
+    "mayra": "https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=800&q=80",
+    "varmala": "/uploads/photos/photo_1793452969145_phera.jpg"
+  },
+  "events": [
+    {
+      "id": "sangeet",
+      "title": "Sangeet Ceremony & Dance Night",
+      "date": "November 20, 2026",
+      "time": "8:00 PM Onwards",
+      "day": "day1",
+      "venue": "Lotus Inn Banquet Hall, Rahatgaon",
+      "attire": "Glamorous Indian Traditional / Indo-Western",
+      "desc": "Get ready for an evening full of musical performances, dance battles, delicious food, and joyous celebrations as both families hit the dance floor!",
+      "icon": "Music",
+      "color": "#E0533C"
+    },
+    {
+      "id": "binayak",
+      "title": "Ghee Binayak & Ganesh Sthapana",
+      "date": "November 21, 2026",
+      "time": "8:00 AM",
+      "day": "day2",
+      "venue": "Lotus Inn Puja Mandap, Rahatgaon",
+      "attire": "Traditional Festive Ethnic",
+      "desc": "A holy Ganpati Sthapana and Ghee Binayak Puja to seek divine blessings from Lord Ganesha for auspicious beginnings and a harmonious union.",
+      "icon": "Sparkles",
+      "color": "#D4AF37"
+    },
+    {
+      "id": "haldi",
+      "title": "Haldi Ceremony & Flower Shower",
+      "date": "November 21, 2026",
+      "time": "10:30 AM",
+      "day": "day2",
+      "venue": "Lotus Inn Lawns, Rahatgaon",
+      "attire": "Shades of Yellow / Mustard Festive Wear",
+      "desc": "Join us in applying holy turmeric paste to the couple amidst marigold flowers, vibrant songs, live dhol beats, and sunny celebrations!",
+      "icon": "Sun",
+      "color": "#E6A100"
+    },
+    {
+      "id": "mayra",
+      "title": "Mayra / Bhaat Ceremony",
+      "date": "November 21, 2026",
+      "time": "3:00 PM",
+      "day": "day2",
+      "venue": "Lotus Inn Courtyard, Rahatgaon",
+      "attire": "Traditional Royal Attire",
+      "desc": "A heartfelt ceremony honoring maternal relatives as they welcome guests with ancestral blessings, traditional gifts, and unconditional warmth.",
+      "icon": "HeartHandshake",
+      "color": "#C73859"
+    },
+    {
+      "id": "varmala",
+      "title": "Varmala & Sacred Seven Pheras",
+      "date": "November 21, 2026",
+      "time": "7:30 PM Onwards",
+      "day": "day2",
+      "venue": "Grand Mandap at Lotus Inn, Rahatgaon",
+      "attire": "Grand Ethnic / Royal Traditional",
+      "desc": "The sacred pinnacle wedding moment! Exchange of floral garlands under the floral canopy, followed by Seven Sacred Pheras around the holy fire.",
+      "icon": "Flame",
+      "color": "#8A1B2D"
+    }
+  ]
+}
